@@ -12,7 +12,6 @@ body {
 .container {
     width: 400px;
     padding: 50px;
-    border: 1px solid black;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -23,16 +22,30 @@ body {
     align-items: center;
 }
 .dice-wrapper {
-    width: 90%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
 }
+img {
+    display: inline-block;
+    margin: 10px;
+}
+#die-1 {
+    height: 125px;
+    width: 125px;
+    display: inline-block;
+}
+#die-2 {
+    height: 125px;
+    width: 125px;
+}
 p{
-    font-size: 16px;
+    background-color: hsl(0, 0%, 50%, .5);
+    font-size: 22px;
     margin: 30px 0;
     font-weight: 500;
     color: white;
-    padding: 15px 0;
+    padding: 15px 15px;
     letter-spacing: 1px;
     text-align: center;
     font-family: Jazz LET, fantasy;
@@ -45,9 +58,16 @@ button {
     outline: none;
     color: white;
     padding: 15px 0;
+    margin-top: 15px;
     width: 150px;
+    font-size: 14px;
     letter-spacing: 1px;
     border-radius: 5px;
     font-family: Jazz LET, fantasy;
     text-shadow: 0.1em 0.1em 0.2em black;
+    transition-duration: .4s;
+}
+button:hover {
+    background-color: transparent;
+
 }
