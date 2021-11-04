@@ -10,3 +10,7 @@ let images = [
 let dice = document.querySelectorAll("img");
 
 // console.log(dice);
+
+function roll () {
+    
+}
