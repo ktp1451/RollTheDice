@@ -12,5 +12,7 @@ let dice = document.querySelectorAll("img");
 // console.log(dice);
 
 function roll () {
-    
+    dice.forEach(function(die){
+        die.classList.add("shake");
+    });
 }
