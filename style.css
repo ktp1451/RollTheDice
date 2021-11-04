@@ -29,6 +29,8 @@ body {
 img {
     display: inline-block;
     margin: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 90%;
 }
 #die-1 {
     height: 125px;
@@ -66,8 +68,8 @@ button {
     font-family: Jazz LET, fantasy;
     text-shadow: 0.1em 0.1em 0.2em black;
     transition-duration: .4s;
+    cursor: pointer;
 }
 button:hover {
-    background-color: transparent;
-
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
