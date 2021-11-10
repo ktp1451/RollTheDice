@@ -11,13 +11,16 @@ let dice = document.querySelectorAll("img");
 
 // console.log(dice);
 
-$('#circle').click(function() {
-    $("#circle").effect("shake");
+$('circle').onClick(function() {
+    $("#die-1").effect("shake");
+    $("#die-2").effect("shake");
 });
+
 
 function roll() {
     dice.forEach(function (die) {
-      die.classList.add("#circle");
+      die.classList.add("#die-1");
+      die.classList.add("#die-2");
     });
     setTimeout(function () {
       let dieOneValue = Math.floor(Math.random() * 6);
@@ -28,4 +31,5 @@ function roll() {
       document.querySelector("#total").innerHTML =
         "Your roll is " + (dieOneValue + 1 + (dieTwoValue + 1));
     }, 1000);
-  }
+}
+roll();
