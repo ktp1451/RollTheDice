@@ -11,9 +11,13 @@ let dice = document.querySelectorAll("img");
 
 // console.log(dice);
 
-function roll () {
+$('#circle').click(function() {
+    $("#circle").effect("shake");
+});
+
+function roll() {
     dice.forEach(function(die){
-        die.classList.add("shake");
+        die.classList.add("#circle");
     });
     let dieOneValue = Math.floor(Math.random()*6);
     let dieTwoValue = Math.floor(Math.random()*6);
