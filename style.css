@@ -2,14 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-body {
+  }
+  body {
     height: 100vh;
     background-image: url("img/forest_background.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-.container {
+  }
+  .container {
     width: 400px;
     padding: 50px;
     position: absolute;
@@ -20,29 +20,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.dice-wrapper {
+  }
+  .dice-wrapper {
     width: 50%;
     display: flex;
     justify-content: space-around;
-}
-img {
+  }
+  img {
     /* display: inline-block; */
     margin: 10px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     opacity: 90%;
-}
-#die-1 {
+  }
+  
+  #die-1 {
     height: 125px;
     width: 125px;
     display: inline-block;
-}
-#die-2 {
+  }
+  #die-2 {
     height: 125px;
     width: 125px;
-}
-p{
-    background-color: hsl(0, 0%, 50%, .5);
+  }
+  p {
+    background-color: hsl(0, 0%, 50%, 0.5);
     font-size: 22px;
     margin: 30px 0;
     font-weight: 500;
@@ -53,8 +54,8 @@ p{
     font-family: Jazz LET, fantasy;
     font-weight: 500;
     text-shadow: 0.1em 0.1em 0.2em black;
-}
-button {
+  }
+  button {
     background-color: grey;
     border: none;
     outline: none;
@@ -67,26 +68,35 @@ button {
     border-radius: 5px;
     font-family: Jazz LET, fantasy;
     text-shadow: 0.1em 0.1em 0.2em black;
-    transition-duration: .4s;
+    transition-duration: 0.4s;
     cursor: pointer;
-}
-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.shake {
-    animation: shake 0.5s infinite;
-}
-
-@keyframes circle{
-    0%, 100% {
-        transform: rotate(0deg);
+  }
+  
+  /* MUST have position to animate something! 
+     here it applies to dice via their class 
+     */
+  
+     .diceIcon {
+      position: relative;
     }
-    10%, 30%, 50%, 70%, 90% {
-        transform: rotate(-8deg);
+    
+    div {
+      padding-bottom: 30px;
     }
-    20%, 40%, 60%, 80% {
-        transform: rotate(8deg);
+    
+    /* button response styles */
+    
+    button:hover {
+      background: lightgray;
     }
-}
-
+    
+    button:active {
+      background: #fff;
+      border: 2px solid #ccc;
+    }
+    
+    button:focus {
+      outline: none;
+    }
+    
+    

@@ -7,23 +7,21 @@
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <!--Stylesheet-->
-    <link
-      rel="stylesheet"
-      href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
-    />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <p>Let The Dice<br>Choose Your Character</p>
+        <p>Let The Dice<br>Choose Your Character<br></p>
         <div class="dice-wrapper">
-            <img src="img/dice-six-faces-one.svg" id="die-1">
-            <img src="img/dice-six-faces-two.svg" id="die-2">
-        </div >
-        <button onclick="roll()">ROLL THE DICE</button>
+            <img src="img/dice-six-faces-one.svg" class="diceIcon" id="die-1">
+                <img src="img/dice-six-faces-two.svg" class="diceIcon" id="die-2">
+        </div>
+        <button id="shake" onclick="roll()">Roll the Dice</button>
         <p id="total"></p>
     </div>
+
     <!--Script-->
     <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -31,4 +29,5 @@
     <!-- <script src="jquery-3.5.1.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </body>
+
 </html>
