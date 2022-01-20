@@ -21,6 +21,32 @@
         <button id="shake" onclick="roll()">Roll the Dice</button>
         <p id="total"></p>
     </div>
+    <div class="popup">
+        <div class="contentBox">
+            <div class="imgBx">
+                <img src="img/Screen Shot 2021-11-10 at 3.06.20 PM.png">
+            </div>
+        </div>
+    </div>
+
+    <!--Automatic show popup after 2 seconds of page load-->
+    <script>
+        const popup = document.querySelector('.popup');
+        const close = document.querySelector('.close');
+
+        window.onload = function(){
+            setTimeout(function(){
+                popup.style.display = "block"
+
+            //Add some time delay to show popup
+            }, 2000)
+        }
+
+        close.addEventListener('click', () => {
+            popup.style.display = "none";
+        })
+    </script>
+
 
     <!--Script-->
     <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
