@@ -98,59 +98,12 @@
     button:focus {
       outline: none;
     }
+
+
+  /* modal info */
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
     
-    .popup
-    {
-        position:fixed;
-        top:50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .contentBox
-    {
-        position: relative;
-        width: 600px;
-        height: 600px;
-        background:#fff;
-        display:flex;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .contentBox .imgBx
-    {
-        position:relative;
-        width: 600px;
-        height: 600px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .contentBox .imgBx::before
-    {
-        content:'';
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        background: e7ffe0;
-    }
-
-    .contentBox .imgBx img {
-        position: relative;
-        max-width: 250px;
-        z-index: 1;
-    }
-
-    /*making modal responsive*/
-    @media (max-width: 767px)
-    {
-        .contentBox
-        {
-            width:300px;
-            height: auto;
-            flex-direction: column;
-
-        }
-    }
