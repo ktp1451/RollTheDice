@@ -63,27 +63,27 @@ function roll() {
      };
    let character;
    if (dieRoll === 2) {
-     createImage("img/characters/pug-puppy.jpg", "Pug Puppy");
+     createImage("img/characters/barbarian.png", "barbarian");
    } else if (dieRoll === 3) {
-     createImage("img/characters/bullmastiff-puppy.jpg", "Bull Mastiff Puppy");
+     createImage("img/characters/bard.png", "bard");
    } else if (dieRoll === 4) {
-     createImage("img/characters/beagle-puppy.jpg", "Beagle Puppy");
+     createImage("img/characters/cleric.png", "cleric");
    } else if (dieRoll === 5) {
-     createImage("img/characters/Bulldog-puppy.jpg", "Bulldog Puppy");
+     createImage("img/characters/druid.png", "druid");
    } else if (dieRoll === 6) {
-     createImage("img/characters/collie-puppy.jpg", "Collie Puppy");
+     createImage("img/characters/fighter.png", "fighter");
    } else if (dieRoll === 7) {
-     createImage("img/characters/corgi-puppy.jpg", "Corgi Puppy");
+     createImage("img/characters/monk.png", "monk");
    } else if (dieRoll === 8) {
-     createImage("img/characters/german-shepherd-puppy.jpg", "White German Shepherd Puppy");
+     createImage("img/characters/paladin.png", "paladin");
    } else if (dieRoll === 9) {
-     createImage("img/characters/golden-puppy.jpg", "Golden Retriever Puppy");
+     createImage("img/characters/ranger.png", "ranger");
    } else if (dieRoll === 10) {
-     createImage("img/characters/husky-puppy.jpg", "Husky Puppy");
+     createImage("img/characters/rogue.png", "rogue");
    } else if (dieRoll === 11) {
-     createImage("img/characters/saint-bernard-puppy.jpg", "Saint Bernard Puppy");
+     createImage("img/characters/sorcerer.png", "sorcerer");
    } else if (dieRoll === 12) {
-     createImage("img/characters/boston-puppy.jpg", "Boston Terrier Puppy");
+     createImage("img/characters/warlock.png", "warlock");
    }
 
  }, 1000);
